@@ -21,7 +21,7 @@ export default function Information() {
         </div>
       </div>
       <div className="big-rocket-container">
-        <img src="../public/rocket.gif" alt="" />
+        <img src="https://media.giphy.com/media/gPCTgwz1ywGGwR8Qu7/giphy.gif" alt="" />
       </div>
     </section>
   );

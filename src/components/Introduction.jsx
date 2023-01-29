@@ -59,14 +59,14 @@ class Introduction extends React.Component {
         </div>
         <div className={`${this.state.classComet}`}>
           <div className="comet-cotainer">
-            <img src="../public/comet.gif" alt="" />
+            <img src="https://media3.giphy.com/media/kvHMtGlTj6U5ZQhIlg/200w.webp" alt="" />
           </div>
         </div>
         <div className={`${this.state.classPlanet}`}>
-          <img src="../public/planet.png" alt="" id="planet"/>
+          <img src="../../public/images/planet.png" id="planet"/>
         </div>
         <div className={`${this.state.classExplosion}`}>
-            <img src="../public/explosion.gif" alt="" id="explosion"/>
+            <img src="https://media0.giphy.com/media/wzmY8woxRLjcfZg7UD/giphy.gif" alt="" id="explosion"/>
         </div>
       </>
     );

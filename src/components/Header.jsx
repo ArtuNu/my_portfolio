@@ -21,7 +21,7 @@ export default function Header() {
         <a href="#contact" className="nav-a" onClick={handleClick}>
           Contacto
         </a>
-        <a href="../../public/curriculum_arturo2023.pdf" className="nav-a" download="curriculum_arturo_nunez">
+        <a href="../../public/curriculum_arturo2023.pdf" className="nav-a">
           CV
         </a>
       </nav>
