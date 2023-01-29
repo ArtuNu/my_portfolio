@@ -1,0 +1,37 @@
+
+.Footer{
+    position: relative;
+    width: 100%;
+    height: max-content;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(18rem,.8fr));
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.Footer > div{
+    text-align: center;
+    padding: 8px 0;
+    background-color: rgba(34, 32, 52, 0.8);
+    border-radius: 20px;
+    cursor: pointer;
+}
+.Footer > div:hover{
+    background-color: rgba(54, 52, 72);
+}
+.Footer > div > a{
+    color: #fff;
+}
+
+.Footer > div > a > i{
+    font-size: 25px;
+    margin-right: 2px;
+}
+
+.Footer > div > a{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    align-items: center;
+}

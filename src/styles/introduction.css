@@ -1,0 +1,181 @@
+.drop {
+  display: none;
+}
+
+.Introduction {
+  position: absolute;
+  z-index: 13;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+
+.introduction-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.introduction-container > div {
+  width: 100%;
+  font-family: monospace;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  font-size: 32px;
+  display: flex;
+  justify-content: center;
+}
+
+.welcome-text-1 {
+  white-space: nowrap;
+  width: 6ch;
+  animation: typing 0.5s steps(6);
+  animation-delay: 1s;
+  overflow: hidden;
+}
+.welcome-text-2 {
+  white-space: nowrap;
+  width: 25ch;
+  animation: typing 2.5s steps(25);
+  animation-delay: 2s;
+  overflow: hidden;
+}
+.welcome-text-3 {
+  white-space: nowrap;
+  width: 22ch;
+  animation: typing 2s steps(22);
+  animation-delay: 4.5s;
+  overflow: hidden;
+}
+
+.visible-1 {
+  animation: visible 1.2s;
+}
+
+.visible-2 {
+  animation: visible 2.2s;
+}
+
+.visible-3 {
+  animation: visible 4.8s;
+}
+
+.opacity-off {
+  animation: opacity-off 3s;
+  animation-delay: 5.5s;
+}
+
+.big-explosion-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: visible 10s normal;
+}
+#explosion {
+  width: 30%;
+}
+
+.big-planet-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#planet {
+  width: 25%;
+}
+
+.big-comet-container {
+  position: absolute;
+  width: 100%;
+  height: 95%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.comet-cotainer {
+  width: 50%;
+  transform: rotate(135deg);
+  height: 15%;
+}
+
+.comet-cotainer > img {
+  margin-left: -80%;
+  width: 20%;
+  animation: move 2s normal;
+  animation-delay: 8s;
+  transform: rotate(230deg);
+}
+
+@keyframes move {
+  from {
+    margin-left: -30%;
+  }
+  to {
+    margin-left: 90%;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes visible {
+  0% {
+    opacity: 0;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes opacity-off {
+  from {
+    opacity: 100;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .introduction-container > div {
+    font-size: 2em;
+  }
+
+  #planet {
+    width: 60%;
+  }
+
+  #explosion {
+    width: 60%;
+  }
+
+  .comet-cotainer {
+    width: 70%;
+    transform: rotate(100deg);
+    height: 15%;
+  }
+
+  .comet-cotainer > img {
+    margin-left: -80%;
+    width: 60%;
+    transform: rotate(230deg);
+  }
+}
