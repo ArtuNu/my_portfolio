@@ -9,7 +9,7 @@ export default function Information() {
     <section className="Information">
       <div className="container">
         <div className="text-container">
-          <p>
+          <div>
             <div id="aboutme">
               <AboutMe />
             </div>
@@ -17,7 +17,7 @@ export default function Information() {
               <ProjectsList />
             <h1 id="contact">Contáctame</h1>
             <Footer/>
-          </p>
+          </div>
         </div>
       </div>
       <div className="big-rocket-container">
