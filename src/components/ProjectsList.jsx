@@ -6,7 +6,7 @@ export default function ProjectsList() {
       <div id="projects-container">
         <Projects
           name="Generador pokémon"
-          image="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Pokemongenerator.png/180px-Pokemongenerator.png"
+          image="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Pokemon_generator.png/800px-Pokemon_generator.png?20230130214818"
           url="https://arturonunez-pokemongenerator.netlify.app/"
           description="Pulsando un botón se muestra en pantalla información acerca de un pokémon aleatorio de primera generación, incluye también buscador por id."
           tecnologies="HTML - CSS - JAVASCRIPT"
