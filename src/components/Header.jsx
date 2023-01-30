@@ -1,10 +1,24 @@
 import "../styles/header.css";
 import { useState } from "react";
-// import { a, BrowserRouter, Route, Switch } from "react-router-dom";
 
 export default function Header() {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
+
+  const onButtonClick = () => {
+    // using Java Script method to get PDF file
+    fetch('curriculum_arturo.pdf').then(response => {
+        response.blob().then(blob => {
+            // Creating new object of PDF file
+            const fileURL = window.URL.createObjectURL(blob);
+            // Setting various property values
+            let alink = document.createElement('a');
+            alink.href = fileURL;
+            alink.download = 'curriculum_arturo.pdf';
+            alink.click();
+        })
+    })
+}
 
   return (
     <header>
@@ -21,7 +35,7 @@ export default function Header() {
         <a href="#contact" className="nav-a" onClick={handleClick}>
           Contacto
         </a>
-        <a href="../../public/curriculum_arturo2023.pdf" className="nav-a">
+        <a className="nav-a" onClick={onButtonClick}>
           CV
         </a>
       </nav>

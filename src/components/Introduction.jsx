@@ -63,7 +63,7 @@ class Introduction extends React.Component {
           </div>
         </div>
         <div className={`${this.state.classPlanet}`}>
-          <img src="../../public/images/planet.png" id="planet"/>
+          <img src="../../public/planet.webp" id="planet"/>
         </div>
         <div className={`${this.state.classExplosion}`}>
             <img src="https://media0.giphy.com/media/wzmY8woxRLjcfZg7UD/giphy.gif" alt="" id="explosion"/>
