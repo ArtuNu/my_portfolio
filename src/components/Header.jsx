@@ -1,5 +1,6 @@
 import "../styles/header.css";
 import { useState } from "react";
+import React from 'react';
 
 export default function Header() {
   const [click, setClick] = useState(false);

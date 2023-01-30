@@ -1,3 +1,4 @@
+import React from 'react';
 import "./styles/App.css";
 import Introduction from "./components/Introduction";
 import Information from "./components/Information";
