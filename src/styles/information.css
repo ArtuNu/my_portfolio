@@ -99,6 +99,9 @@
 }
 
 @media (max-width: 768px) {
+  #aboutme{
+    padding: 0 10px;
+  }
   .Information {
     position: absolute;
     width: 100%;
