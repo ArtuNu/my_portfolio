@@ -3,7 +3,7 @@ import React from 'react';
 
 import AboutMe from "./AboutMe";
 import Footer from "./Footer";
-import ProjectsList from "./ProjectsList";
+import Projects from "./ProjectsList";
 
 export default function Information() {
   return (
@@ -15,7 +15,7 @@ export default function Information() {
               <AboutMe />
             </div>
             <h1 id="projects">Mis proyectos</h1>
-              <ProjectsList />
+              <Projects />
             <h1 id="contact">Contáctame</h1>
             <Footer/>
           </div>
